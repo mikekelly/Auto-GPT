@@ -10,7 +10,7 @@ services:
     env_file:
       - .env
     volumes:
-      - "./:/home/appuser/app"
+      - "./:/app"
     profiles: ["exclude-from-up"] # Run and attach to container instead with: `docker-compose run auto-gpt`
 
   redis:
